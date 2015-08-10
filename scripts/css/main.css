@@ -1,0 +1,172 @@
+body {
+  background-color: #ECF0F1;
+}
+
+#learn {
+    background-color: #E74C3C;
+    margin-top: 20px;
+    border-color: #E74C3C;
+}
+
+.support-logo {
+  margin: 20px;
+}
+
+#bseen {
+  width: 118px;
+  height: 40px;
+}
+
+#espark {
+  width: 160px;
+  height: 40px;
+}
+
+#ckic {
+  width: 70px;
+  height: 40px;
+}
+
+#ei {
+  width: 172px;
+  height: 30px;
+}
+
+#rackspace {
+  width: 134px;
+  height: 40px;
+}
+
+#esri {
+  width: 120px;
+  height: 40px;
+}
+
+a {
+  color: #E74C3C;
+  font-weight: 400;
+}
+
+.qb-mod {
+  font-weight: 400;
+}
+
+.bg-master-lightest {
+    background-color: #ECF0F1;
+}
+
+.bg-master-lightest h1, .bg-master-lightest h5 {
+    color: #3498DB;
+    opacity: 1;
+}
+
+.bg-master-lightest p {
+    color: #3498DB;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.bg-master-blue {
+    background-color: #3498DB;
+}
+
+.bg-master-blue h1, .bg-master-blue h5 {
+    color: #ECF0F1;
+    opacity: 1;
+}
+
+.bg-master-blue p {
+    color: #ECF0F1;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.header.transparent-dark .menu > li > a {
+  color: #3498DB;
+}
+
+.header.transparent-dark {
+    background-color: #ECF0F1; 
+}
+
+.header.transparent-dark .search-toggle {
+  color: #3498DB;
+}
+
+.header.transparent-dark .menu.bordered > li > a {
+  border-color: #3498DB;
+}
+
+/* background for nav menu header */
+.header.dark {
+  background-color: rgba(44, 62, 80, 0.87);
+}
+
+/* background for footer menu */
+.bg-master-darker {
+  background-color: #2C3E50;
+}
+
+.bg-gray {
+    background-color: #ECF0F1;
+}
+
+.bg-blue {
+    background-color: #3498DB;
+}
+
+.nav-tabs-simple.nav-tabs-left > li.active:after,
+.nav-tabs-simple.nav-tabs-right > li.active:after,
+.nav-tabs-simple.nav-tabs-left > li:hover:after,
+.nav-tabs-simple.nav-tabs-right > li:hover:after {
+  width: 3px;
+}
+
+.nav-tabs-simple > li:after {
+  -webkit-transition: all 0.1s linear 0s;
+  transition: all 0.1s linear 0s;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  display: block;
+  background-color: #3498DB;
+  height: 0px;
+  content: '';
+  z-index: 125;
+}
+
+/* Highlight text color */
+.highlight-blue {
+    color: #3498DB;
+    font-weight: 600;
+}
+
+.achievements {
+    font-size: 1.2em;
+}
+
+.achievements > li {
+    margin-top: 0.8em;
+}
+
+.faq-text details {
+    color: #ECF0F1;
+    font-size: 0.9em;
+    line-height: 180%;
+}
+
+.faq-text summary {
+    color: #00D9FF;
+}
+
+.btn-primary {
+    color: #ECF0F1;
+    background-color: #3498DB;
+    border-color: #3498DB;
+}
+
+#mce-EMAIL, #mc-embedded-subscribe {
+    position: relative;
+    background-color: #ECF0F1;
+    width: 30px;
+}
+    
