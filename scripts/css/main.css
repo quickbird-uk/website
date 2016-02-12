@@ -86,7 +86,7 @@ a {
 }
 
 .header.transparent-dark {
-    background-color: #ECF0F1; 
+    background-color: #ECF0F1;
 }
 
 .header.transparent-dark .search-toggle {
@@ -169,4 +169,10 @@ a {
     background-color: #ECF0F1;
     width: 30px;
 }
-    
+
+#heroText {
+  padding: 100px;
+  text-align: center;
+  color: #ECF0F1;
+  line-height: 1.75em;
+}
