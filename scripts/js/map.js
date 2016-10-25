@@ -23,7 +23,7 @@ function initialize() {
     { 
         "featureType": "road.highway", 
         "stylers": [ 
-            { "visibility": "off" } 
+            { "visibility": "on" } 
         ]
     },
     { 
@@ -35,7 +35,7 @@ function initialize() {
     { 
         "featureType": "road.arterial", 
         "stylers": [ 
-            { "visibility": "off" } 
+            { "visibility": "on" } 
         ] 
     },
     { 
@@ -75,14 +75,13 @@ function initialize() {
         "featureType": "poi", 
         "elementType": "geometry", 
         "stylers": [ 
-            { "visibility": "on" }, 
-            { "color": "#3498DB" } 
+            { "visibility": "off" }
         ] 
     },
     { 
         "featureType": "poi.business", 
         "stylers": [ 
-            { "visibility": "off" } 
+            { "visibility": "on" }  
         ] 
     },
     { 
@@ -91,7 +90,7 @@ function initialize() {
         "stylers": [ 
             { "color": "#3498DB" }, 
             { "visibility": "on" }, 
-            { "weight": 0.2 } 
+            { "weight": 0.8 } 
         ] 
     }
 ];
@@ -103,12 +102,12 @@ function initialize() {
     
     var mapProp = {
       scrollwheel: false,
-      zoomControl: false,
-      panControl: false,
-      scaleControl: false,
+      zoomControl: true,
+      panControl: true,
+      scaleControl: true,
       streetViewControl: false,
       mapTypeControl: false,
-      center: new google.maps.LatLng(52.481441, -1.897553),
+      center: new google.maps.LatLng(52.489026, -1.888582),
       zoom: 15,
       mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
@@ -123,7 +122,7 @@ function initialize() {
     map.setMapTypeId('map_style');
 
     var marker = new google.maps.Marker ({
-      position: new google.maps.LatLng(52.481441, -1.897553),
+      position: new google.maps.LatLng(52.489026, -1.888582),
       map: map,
       title: 'Quickbird',
       draggable: false,
