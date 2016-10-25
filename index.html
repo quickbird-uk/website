@@ -44,8 +44,8 @@
                     <!-- .header-inner Allows to vertically Align elements to the Center-->
                     <div class="header-inner">
                         <!-- BEGIN LOGO -->
-                        <a href="http://www.quickbird.uk"><img src="assets/logos/full/blue/blue-400px.png" width="158" height="45" data-src-retina="assets/logos/full/blue/blue-600px.png" class="logo" alt=""></a>
-                        <a href="http://www.quickbird.uk"><img src="assets/logos/full/white/logo-400px.png" width="158" height="45" data-src-retina="assets/logos/full/white/logo-600px.png" class="alt" alt=""></a>
+                        <a href="http://www.quickbird.uk"><img src="assets/logos/logo-qb-blue-medium.png" width="158" height="45" data-src-retina="assets/logos/logo-qb-blue-large.png" class="logo" alt=""></a>
+                        <a href="http://www.quickbird.uk"><img src="assets/logos/logo-qb-light-medium.png" width="158" height="45" data-src-retina="assets/logos/logo-qb-light-large.png" class="alt" alt=""></a>
                     </div>
                 </div>
                 <!-- BEGIN HEADER TOGGLE FOR MOBILE & TABLET -->
@@ -212,114 +212,8 @@
                             <li><strong>Device management</strong> They can use a phone, a computer or the web-app, to your equipment the API call will look just the same.</li>
                         </ul>
                         <p>
-                            We have hardware developers on the team, and can assist you with integrating your equipment with QuickLink. <a href="about.html">Get in touch</a> if you have any questions.
+                            We have hardware developers on the team, and can assist you with integrating your equipment with QuickLink. <a href="about.html">Get in touch</a> if you have any questions. 
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END CONTENT SECTION -->
-        <!-- START CONTENT SECTION -->
-        <section class="p-b-100 p-t-100 bg-master-darker">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <h1 class="text-white text-center m-t-5">FAQ</h1>
-                        <br>
-                        <article>
-                            <h5 class="p-t-0 faq-text text-left">
-                                <details>
-                                    <summary>Will Wi-Fi interfere with other transmitters on my drone?</summary>
-                                    It will not. Wi-Fi is only used to configure the sensor before the flight, and to retrieve images after. During the flight Wi-Fi is disengaged, and does not occupy the spectrum.
-                                    <br>
-                                </details>
-                            </h5>
-                            <h5 class="p-t-0 faq-text text-left">
-                                <details>
-                                    <summary>Will we have atmospheric correction?</summary>
-                                    Eventually. We plan to make a module for Anywave, it would be similar to the light sensors it uses currently, but instead of measuring overall light levels it would consist of many tiny light sensors, each measuring the exact same channels Anywave is imaging. When released, it will be compatible with current version of Anywave, after a software update.
-                                    <br>
-                                </details>
-                            </h5>
-                            <h5 class="p-t-0 faq-text text-left">
-                                <details>
-                                    <summary>Why does it have fewer megapixels than a mobile phone?</summary>
-                                    That’s because marketing department of camera companies counts like 
-                                    <br><b>Mpixels = Red pixels + Green Pixels + Blue pixels</b>
-                                    <br>We count like <b>Mpixels = (Red pixels + Green pixels + Blue pixels) ÷ 3</b>
-                                    <br>A 16 megapixel camera only has 8 million green pixels, 4 million blue pixels, and 4 million red pixels. For every spot on the image, the camera only knows one out of three colours. The raw (hence the format, RAW) image looks like this. To get 16 MP images, cameras do something called interpolation: for every pixel, the missing colours are estimated using information from the nearby pixels. This is fine for producing photographs, but it will not produce a scientific measurement. Without this process, your 16MP camera would be producing 4 MP photographs.
-                                    <br> 
-Anywave has a separate sensor dedicated to each channel. In the resulting images each pixel has a real measurement for every colour/channel. If we counted the Megapixels the way ‘normal’ cameras do, a 6 channel Anywave would have resolution of 17 Megapixels.
-                                    <br>
-                                </details>
-                            </h5>
-                            <h5 class="p-t-0 faq-text text-left">
-                                <details>
-                                    <summary>What is the real accuracy of your GPS?</summary>
-                                    When stationary, and with good signal you have 50% chance (CEP50) of getting a position within 1.5 meters your actual location, and 95% chance of getting a position within 3.1 meters. The receiver works with both GNSS and GPS satellites with 32 channels, and we supply a good antenna to maximise your chances of getting good signal. 
-                                    <br>
-                                    Of course drones are not stationary. Vast majority of GPS receivers update their position once a second. If you drone is flying at a moderate 40 km/h, it will travel 11 meters in one second. When you use such GPS to geotag an image, it could be off by many meters!<br>
-                                    <br>
-                                    <img src="assets/images/gps.jpg" alt="gps" width="800" height="256">
-                                    <br>
-                                    <br>
-                                    That’s why Anywave uses the highest-speed GPS receiver we could get our hands on. It updates position 10 times per second and minimises these errors.
-                                    <br>
-At the end of the day what we need is not a single image, but a 3D model or an orthomosaic that is accurately geo-referenced. In producing them 3D reconstruction software matches hundreds of images pixel by pixel, and combines all geotags to obtain more accurate location and orientation. Random errors cancel each-other out, while systematic ones such as using out of date GPS position, do not. 
-                                </details>
-                            </h5>
-                            <h5 class="p-t-0 faq-text text-left">
-                                <details>
-                                    <summary>Will GPS on Anywave interfere with GPS already installed on my drone?</summary>
-                                    No, GPS receivers are passive, meaning they only ‘listen’ and do not ‘talk’ back to the satellites. You can have any number of GPS active at the same time.
-                                </details>
-                            </h5>
-                            <h5 class="p-t-0 faq-text text-left">
-                                <details>
-                                    <summary>What are the limitations of the GPS?</summary>
-                                    You shouldn’t have issues unless you are mounting Anywave on a rocket. Standard COCOM limits apply, GPS will keep working unless you exceed one of the following:
-                                    <ul>
-                                        <li>velocity greater than 515 m/s AND altitude above 18,000 m</li>
-                                        <li>altitude: 100,000 m (max) or -1500 m (min)</li>
-                                        <li>speed: 600 m/s </li>
-                                        <li>acceleration: 2g</li>
-                                    </ul>
-                                </details>
-                            </h5>
-                            <h5 class="p-t-0 faq-text text-left">
-                                <details>
-                                    <summary>Why don’t you have RTK?</summary>
-                                    RTK GPS would add a lot to the cost to Anywave, and in most cases it is unneeded and impractical. 
-Besides, RTK needs its own radio link and there are already many transmitters on a drone. Radio control, FPV video and telemetry all compete for spectrum. Many find the signal to be unreliable and just another thing that can go wrong. We prioritise reliable over fancy. 
-If your project absolutely requires centimetre precision, we recommend that you use ground control points and a total station.
-                                </details>
-                            </h5>
-                        </article>      
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END CONTENT SECTION -->
-        <!-- START CONTENT SECTION -->
-        <section class="p-b-100 p-t-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <h6 class="block-title m-b-0 text-center">Stay in touch</h6>
-                        <h1 class="text-center m-t-5">Subscribe to product updates</h1>
-                        <p class="p-t-0 text-center">Don't worry we won't spam you. Or share your details with a third-party. You will receive just one email announcing the general availability of AnyWave 2.</p>
-                        <!-- Begin MailChimp Signup Form -->
-                        <div id="mc_embed_signup">
-                            <form action="//quickbird.us11.list-manage.com/subscribe/post?u=a6655aa8828cdd1348648abf8&amp;id=abbb5a5d7c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a6655aa8828cdd1348648abf8_abbb5a5d7c" tabindex="-1" value=""></div>
-                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                                </div>
-                            </form>
-                        </div>
-                        <!--End mc_embed_signup-->
                     </div>
                 </div>
             </div>
